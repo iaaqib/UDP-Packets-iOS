@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		7B3B56CD1F51EAA500043E20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56CC1F51EAA500043E20 /* AppDelegate.swift */; };
-		7B3B56CF1F51EAA500043E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56CE1F51EAA500043E20 /* ViewController.swift */; };
-		7B3B56D21F51EAA500043E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3B56D01F51EAA500043E20 /* Main.storyboard */; };
 		7B3B56D41F51EAA500043E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B3B56D31F51EAA500043E20 /* Assets.xcassets */; };
 		7B3B56D71F51EAA500043E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3B56D51F51EAA500043E20 /* LaunchScreen.storyboard */; };
 		7B3B56E21F51EAA600043E20 /* RemoteControl_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56E11F51EAA600043E20 /* RemoteControl_iOSTests.swift */; };
+		7B3B56FD1F51EC5000043E20 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56F91F51EC5000043E20 /* Extensions.swift */; };
+		7B3B56FE1F51EC5000043E20 /* UDPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56FA1F51EC5000043E20 /* UDPModel.swift */; };
+		7B3B56FF1F51EC5000043E20 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56FB1F51EC5000043E20 /* Util.swift */; };
+		7B3B57001F51EC5000043E20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B56FC1F51EC5000043E20 /* ViewController.swift */; };
+		7B3B57031F51EC5A00043E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B3B57011F51EC5A00043E20 /* Main.storyboard */; };
+		90E3ECC69C40AF5C3B80488C /* Pods_RemoteControl_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEFF916A9C8D571AFDB4DED /* Pods_RemoteControl_iOS.framework */; };
+		F4528863751D68A5A94977DA /* Pods_RemoteControl_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBD3F81B379EF5A7210C1528 /* Pods_RemoteControl_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +31,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		43D50510B2C1E57497065DB1 /* Pods-RemoteControl-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl-iOSTests/Pods-RemoteControl-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		696508BBB80F1B1649E98A2E /* Pods-RemoteControl-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl-iOS/Pods-RemoteControl-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		6FC773C81023DAC70CA4A57B /* Pods-RemoteControl-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl-iOS/Pods-RemoteControl-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7B3B56C91F51EAA500043E20 /* RemoteControl-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RemoteControl-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3B56CC1F51EAA500043E20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7B3B56CE1F51EAA500043E20 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7B3B56D11F51EAA500043E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7B3B56D31F51EAA500043E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B3B56D61F51EAA500043E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B3B56D81F51EAA500043E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B3B56DD1F51EAA600043E20 /* RemoteControl-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RemoteControl-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3B56E11F51EAA600043E20 /* RemoteControl_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControl_iOSTests.swift; sourceTree = "<group>"; };
 		7B3B56E31F51EAA600043E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B3B56F91F51EC5000043E20 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B3B56FA1F51EC5000043E20 /* UDPModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UDPModel.swift; sourceTree = "<group>"; };
+		7B3B56FB1F51EC5000043E20 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		7B3B56FC1F51EC5000043E20 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7B3B57021F51EC5A00043E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		921CE25ED4B29B6EAAFC5DB0 /* Pods-RemoteControl-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RemoteControl-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RemoteControl-iOSTests/Pods-RemoteControl-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEEFF916A9C8D571AFDB4DED /* Pods_RemoteControl_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteControl_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBD3F81B379EF5A7210C1528 /* Pods_RemoteControl_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RemoteControl_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E3ECC69C40AF5C3B80488C /* Pods_RemoteControl_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +65,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4528863751D68A5A94977DA /* Pods_RemoteControl_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AABB45EA25657D3291CC164 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6FC773C81023DAC70CA4A57B /* Pods-RemoteControl-iOS.debug.xcconfig */,
+				696508BBB80F1B1649E98A2E /* Pods-RemoteControl-iOS.release.xcconfig */,
+				921CE25ED4B29B6EAAFC5DB0 /* Pods-RemoteControl-iOSTests.debug.xcconfig */,
+				43D50510B2C1E57497065DB1 /* Pods-RemoteControl-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7B3B56C01F51EAA500043E20 = {
 			isa = PBXGroup;
 			children = (
 				7B3B56CB1F51EAA500043E20 /* RemoteControl-iOS */,
 				7B3B56E01F51EAA600043E20 /* RemoteControl-iOSTests */,
 				7B3B56CA1F51EAA500043E20 /* Products */,
+				1AABB45EA25657D3291CC164 /* Pods */,
+				8EAA8BBDA367B57329694146 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,9 +106,11 @@
 		7B3B56CB1F51EAA500043E20 /* RemoteControl-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				7B3B57071F51EC8C00043E20 /* Model */,
+				7B3B57061F51EC8000043E20 /* Controller */,
+				7B3B57051F51EC7200043E20 /* Helper */,
+				7B3B57041F51EC6700043E20 /* Views */,
 				7B3B56CC1F51EAA500043E20 /* AppDelegate.swift */,
-				7B3B56CE1F51EAA500043E20 /* ViewController.swift */,
-				7B3B56D01F51EAA500043E20 /* Main.storyboard */,
 				7B3B56D31F51EAA500043E20 /* Assets.xcassets */,
 				7B3B56D51F51EAA500043E20 /* LaunchScreen.storyboard */,
 				7B3B56D81F51EAA500043E20 /* Info.plist */,
@@ -96,6 +127,48 @@
 			path = "RemoteControl-iOSTests";
 			sourceTree = "<group>";
 		};
+		7B3B57041F51EC6700043E20 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B57011F51EC5A00043E20 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7B3B57051F51EC7200043E20 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B56FB1F51EC5000043E20 /* Util.swift */,
+				7B3B56F91F51EC5000043E20 /* Extensions.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		7B3B57061F51EC8000043E20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B56FC1F51EC5000043E20 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7B3B57071F51EC8C00043E20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B3B56FA1F51EC5000043E20 /* UDPModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8EAA8BBDA367B57329694146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEFF916A9C8D571AFDB4DED /* Pods_RemoteControl_iOS.framework */,
+				FBD3F81B379EF5A7210C1528 /* Pods_RemoteControl_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B3B56E61F51EAA600043E20 /* Build configuration list for PBXNativeTarget "RemoteControl-iOS" */;
 			buildPhases = (
+				86B3F320455EA8DB2E7B98FA /* [CP] Check Pods Manifest.lock */,
 				7B3B56C51F51EAA500043E20 /* Sources */,
 				7B3B56C61F51EAA500043E20 /* Frameworks */,
 				7B3B56C71F51EAA500043E20 /* Resources */,
+				4D0625A44F7C63762C28BDBD /* [CP] Embed Pods Frameworks */,
+				ED231008934ECEC45808B97A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +196,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B3B56E91F51EAA600043E20 /* Build configuration list for PBXNativeTarget "RemoteControl-iOSTests" */;
 			buildPhases = (
+				95EEDB80B819C69958D43799 /* [CP] Check Pods Manifest.lock */,
 				7B3B56D91F51EAA600043E20 /* Sources */,
 				7B3B56DA1F51EAA600043E20 /* Frameworks */,
 				7B3B56DB1F51EAA600043E20 /* Resources */,
+				EA6361DA81C486DC26EDA1DC /* [CP] Embed Pods Frameworks */,
+				E499B0986E057ACB9ABD542A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -179,9 +258,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B3B57031F51EC5A00043E20 /* Main.storyboard in Resources */,
 				7B3B56D71F51EAA500043E20 /* LaunchScreen.storyboard in Resources */,
 				7B3B56D41F51EAA500043E20 /* Assets.xcassets in Resources */,
-				7B3B56D21F51EAA500043E20 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +273,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D0625A44F7C63762C28BDBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControl-iOS/Pods-RemoteControl-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86B3F320455EA8DB2E7B98FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		95EEDB80B819C69958D43799 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E499B0986E057ACB9ABD542A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControl-iOSTests/Pods-RemoteControl-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA6361DA81C486DC26EDA1DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControl-iOSTests/Pods-RemoteControl-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED231008934ECEC45808B97A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RemoteControl-iOS/Pods-RemoteControl-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B3B56C51F51EAA500043E20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B3B56CF1F51EAA500043E20 /* ViewController.swift in Sources */,
+				7B3B57001F51EC5000043E20 /* ViewController.swift in Sources */,
 				7B3B56CD1F51EAA500043E20 /* AppDelegate.swift in Sources */,
+				7B3B56FE1F51EC5000043E20 /* UDPModel.swift in Sources */,
+				7B3B56FD1F51EC5000043E20 /* Extensions.swift in Sources */,
+				7B3B56FF1F51EC5000043E20 /* Util.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +398,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7B3B56D01F51EAA500043E20 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7B3B56D11F51EAA500043E20 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		7B3B56D51F51EAA500043E20 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7B3B56D61F51EAA500043E20 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7B3B57011F51EC5A00043E20 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B3B57021F51EC5A00043E20 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -337,9 +512,11 @@
 		};
 		7B3B56E71F51EAA600043E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC773C81023DAC70CA4A57B /* Pods-RemoteControl-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RemoteControl-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "app.KodeSnippets.RemoteControl-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -349,9 +526,11 @@
 		};
 		7B3B56E81F51EAA600043E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696508BBB80F1B1649E98A2E /* Pods-RemoteControl-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "RemoteControl-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "app.KodeSnippets.RemoteControl-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +540,7 @@
 		};
 		7B3B56EA1F51EAA600043E20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 921CE25ED4B29B6EAAFC5DB0 /* Pods-RemoteControl-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,6 +555,7 @@
 		};
 		7B3B56EB1F51EAA600043E20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D50510B2C1E57497065DB1 /* Pods-RemoteControl-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -406,6 +587,7 @@
 				7B3B56E81F51EAA600043E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B3B56E91F51EAA600043E20 /* Build configuration list for PBXNativeTarget "RemoteControl-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +596,7 @@
 				7B3B56EB1F51EAA600043E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
